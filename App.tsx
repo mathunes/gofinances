@@ -3,6 +3,8 @@ import { ThemeProvider } from 'styled-components';
 import AppLoading from 'expo-app-loading';
 
 import { Dashboard } from './src/screens/Dashboard';
+import { Register } from './src/screens/Register';
+
 import theme from './src/global/styles/theme';
 import { 
   useFonts, 
@@ -28,7 +30,7 @@ export default function App() {
     //Disponibilizar tema para toda a aplicação
 
     <ThemeProvider theme={theme}>
-      <Dashboard />
+      <Register />
     </ThemeProvider>
   );
 }
